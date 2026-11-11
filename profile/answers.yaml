@@ -1,0 +1,50 @@
+# Standard application answers. Source: context.md + resumes shared in session, plus defaults Bishesta can correct.
+# The apply agent uses ONLY these for factual/legal questions — it never guesses. Edit anything below.
+
+identity:
+  first_name: Bishesta
+  last_name: Bohara
+  email: boharabishesta12@gmail.com
+  phone: "(940) 765-8150"
+  location: "Hattiesburg, Mississippi"   # city search boxes: type "Hattiesburg" and pick "Hattiesburg, Mississippi, United States"
+  state: "Mississippi"
+  country: "United States"
+  linkedin: https://linkedin.com/in/bishesta-bohara
+  github: https://github.com/bishestabohara
+
+education:
+  school: The University of Southern Mississippi   # search-box forms: type "Southern Mississippi" and pick this
+  degree: B.S. Computer Science and Mathematics   # if the form has a separate "Field of Study": degree = "Bachelor of Science (B.S.)", field = "Computer Science and Mathematics"
+  gpa: "3.762"
+  start: "August 2024"                    # from resume: Aug. 2024
+  graduation:                             # = education end date; matches the resume sent with the application
+    internship_applications: "May 2028"   # intern resumes (swe_intern, pm_intern)
+    fulltime_applications: "May 2027"     # new-grad resumes (swe_fulltime, pm_fulltime)
+  currently_student: "Yes"
+
+work_authorization:
+  status: "F-1 student visa"
+  authorized_to_work_us: "Yes — F-1 (CPT for internships, OPT after graduation)"
+  requires_sponsorship_now_or_future: "Yes"   # answer truthfully on every form; never hide it
+  # Sponsorship is a ranking priority, not a filter — still apply to companies that don't sponsor.
+
+availability:
+  internship_start: "Summer 2027 (May–August), flexible"
+  fulltime_start: "June 2027"            # after May 2027 graduation
+  willing_to_relocate: "Yes — NYC preferred, open to other locations"
+  remote_ok: "Yes"
+
+compensation:
+  expectation: "Open / negotiable"       # used when a salary field is required
+
+eeo:                                     # optional self-identification questions — provided by Bishesta 2026-09-29
+  gender: "Female"
+  race: "Asian (Not Hispanic or Latino)"
+  hispanic_or_latino: "No"
+  veteran: "I am not a protected veteran"
+  disability: "Decline to self-identify"       # not provided — decline
+  sexual_orientation: "Decline to self-identify"  # not provided — decline
+  transgender: "Decline to self-identify"         # not provided — decline
+  default: "Decline to self-identify"          # any other optional demographic question
+
+how_did_you_hear: "Company careers page"

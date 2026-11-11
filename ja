@@ -1,0 +1,3 @@
+#!/bin/zsh
+# Shortcut: ./ja <command>  ==  .venv/bin/python -m jobagent <command>
+exec "${0:A:h}/.venv/bin/python" -m jobagent "$@"

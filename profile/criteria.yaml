@@ -1,0 +1,65 @@
+# Machine-readable knobs. The narrative lives in context.md; the agent reads both.
+
+roles:
+  - swe_intern
+  - swe_fulltime      # new grad
+  - pm_intern
+  - pm_fulltime       # new grad
+
+graduation: ["Spring 2027", "Spring 2028"]   # open to either — intern (2028 resume) vs new grad (2027 resume)
+
+location:
+  preferred: ["New York", "NYC", "Brooklyn", "Manhattan"]
+  also_ok: ["Remote", "Hybrid"]              # not a hard filter; NYC is ranked first
+
+company_size: any    # startup, mid-size, or big tech all OK — mission/values fit decides, not headcount
+
+mission_lanes:       # priority order
+  - healthcare              # primary push: access, quality, navigation, cost
+  - education
+  - caregiving_aging_mental_health
+  - other_human_impact
+avoid: ["ad-tech", "growth-hacking consumer apps", "trading / HFT", "gambling", "abstract/purely profit-driven missions"]
+avoid_exception: "Allowed only if the role has real ownership, scope, and growth (exceptional comp is one signal)."
+
+sponsorship:
+  hard_filter: false
+  rank_boost_if_likely: true   # prioritize, surface status, never auto-exclude
+
+scoring:
+  min_fit_to_surface: 60       # jobs below this stay out of the daily digest
+
+applying:             # each run = N "packets": 1 application + 1 personalized email to someone at that company
+  per_run: 10                       # packets per ./scripts/run.sh — raise to scale up
+  tier1_lanes: [healthcare, education, caregiving_aging_mental_health]   # + companies with status 'pursuing'
+                                    # tier 1 = your targets (deep research, filled first); tier 2 = other recent roles
+  backlog_days: 14                  # only roles posted in the last N days
+  max_per_company: 2                # never more than 2 applications at one company
+
+daily_session:        # limits for the supervised /job-session — raise once reply rates are known
+  applications: 5
+  new_people: 8                     # new people researched + drafted per run (~4 companies × 2)
+  discover_when_targets_below: 15   # only spend time sourcing companies when the pool runs low
+  discover_batch: 6
+
+outreach:
+  channels: ["email", "linkedin"]   # priority channels
+  per_day_new_contacts: 12          # `jobagent auto` (API mode) cap; the session uses daily_session.new_people
+  contacts_per_company: 2
+  follow_ups: false                 # agent sends first outreach only — never replies, no nudges
+  follow_up_days: [5, 12]           # used only if follow_ups: true
+  linkedin_note_max_chars: 300
+  email_max_words: 150
+  ask: "a 15-minute conversation"   # never lead with 'refer me'
+  send_mode: auto                   # auto = `./ja send-due` sends emails immediately · drafts = Gmail drafts only
+  max_emails_per_day: 15            # hard cap across first touches + follow-ups
+  min_email_confidence: 80          # only email addresses that are published (100) or Hunter-verified >= this
+  pause_file: PAUSE                 # `touch PAUSE` in the project folder stops all sending and applying
+
+sources:
+  simplify:                         # github.com/SimplifyJobs — Summer 2027 internships + new grad, updated daily
+    enabled: true
+    lookback_days: 30
+
+discovery:
+  new_companies_per_run: 8

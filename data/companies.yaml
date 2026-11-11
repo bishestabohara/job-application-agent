@@ -1,0 +1,71 @@
+# Seed companies. `discover` adds more automatically (stored in the DB, not here).
+# ats: greenhouse | lever | ashby | none   slug: board id (verified 2026-09-27)
+# status: pursuing | evaluate | target | network_only (outreach, no job fetch) | ruled_out (nothing)   sponsorship: confirmed_no | likely | unknown
+# Fields may be left blank; `verify: true` means the board slug match wasn't confirmed.
+
+# --- From context.md -------------------------------------------------------
+- {name: Sage, lane: caregiving_aging_mental_health, ats: none, status: pursuing, nyc: true, note: "caregiving for older adults; Full-Stack SWE Intern (NYC). Job board not found — check their careers page"}
+- {name: Duolingo, lane: education, ats: greenhouse, slug: duolingo, status: pursuing, note: "Summer 2027 SWE intern — deadline-sensitive"}
+- {name: Grow Therapy, lane: caregiving_aging_mental_health, ats: ashby, slug: grow-therapy, status: pursuing, nyc: true}
+- {name: Garner Health, lane: healthcare, ats: greenhouse, slug: garnerhealth, status: pursuing, nyc: true, sponsorship: confirmed_no}
+- {name: Zocdoc, lane: healthcare, ats: greenhouse, slug: zocdoc, status: evaluate, nyc: true}
+- {name: K Health, lane: healthcare, ats: none, status: evaluate, nyc: true}
+- {name: Breaking Ground, lane: other_human_impact, ats: none, status: evaluate, nyc: true, sponsorship: unknown, note: "NYC homelessness nonprofit; likely no sponsorship"}
+- {name: Viam, lane: other_human_impact, ats: greenhouse, slug: viamrobotics, status: evaluate, nyc: true, note: "robotics; lower priority"}
+- {name: Plaid, lane: other_human_impact, ats: ashby, slug: plaid, status: evaluate, nyc: true, sponsorship: confirmed_no, note: "stepping-stone exception: real ownership/scope"}
+- {name: Included Health, lane: healthcare, ats: lever, slug: includedhealth, status: network_only, note: "no internship program — networking only"}
+- {name: Cityblock Health, lane: healthcare, ats: none, status: network_only, note: "no internship program — networking only"}
+- {name: Maven Securities, lane: other, ats: none, status: ruled_out, note: "mission mismatch"}
+
+# --- Healthcare (primary lane) ---------------------------------------------
+- {name: Sage Care, lane: healthcare, ats: ashby, slug: sagecare, status: target, note: "AI care navigation for health systems (not the caregiving Sage)"}
+- {name: Oscar Health, lane: healthcare, ats: greenhouse, slug: oscar, status: target, nyc: true}
+- {name: Headway, lane: caregiving_aging_mental_health, ats: ashby, slug: headway, status: target, nyc: true}
+- {name: Flatiron Health, lane: healthcare, ats: greenhouse, slug: flatironhealth, status: target, nyc: true}
+- {name: One Medical, lane: healthcare, ats: greenhouse, slug: onemedical, status: target}
+- {name: Abridge, lane: healthcare, ats: ashby, slug: abridge, status: target}
+- {name: Commure, lane: healthcare, ats: ashby, slug: commure, status: target}
+- {name: Cedar, lane: healthcare, ats: ashby, slug: cedar, status: target, nyc: true}
+- {name: Capsule, lane: healthcare, ats: ashby, slug: capsule, status: target, nyc: true}
+- {name: Ro, lane: healthcare, ats: lever, slug: ro, status: target, nyc: true}
+- {name: Nomi Health, lane: healthcare, ats: lever, slug: nomihealth, status: target}
+- {name: Carbon Health, lane: healthcare, ats: ashby, slug: carbonhealth, status: target}
+- {name: Maven Clinic, lane: healthcare, ats: greenhouse, slug: mavenclinic, status: target, nyc: true}
+- {name: Collective Health, lane: healthcare, ats: greenhouse, slug: collectivehealth, status: target}
+- {name: Healthie, lane: healthcare, ats: greenhouse, slug: healthie, status: target, nyc: true}
+- {name: Tia, lane: healthcare, ats: greenhouse, slug: tia, status: target, nyc: true}
+- {name: Parsley Health, lane: healthcare, ats: greenhouse, slug: parsleyhealth, status: target, nyc: true}
+- {name: Pomelo Care, lane: healthcare, ats: greenhouse, slug: pomelocare, status: target, nyc: true}
+- {name: Midi Health, lane: healthcare, ats: greenhouse, slug: midihealth, status: target}
+- {name: Sesame, lane: healthcare, ats: none, status: target, nyc: true, note: "sesamecare.com — board not found (ashby 'sesame' is Sesame AI, unrelated)"}
+- {name: Solv Health, lane: healthcare, ats: lever, slug: solvhealth, status: target}
+- {name: Zus Health, lane: healthcare, ats: lever, slug: zushealth, status: target}
+- {name: Curative, lane: healthcare, ats: greenhouse, slug: curative, status: target}
+- {name: Everlywell, lane: healthcare, ats: lever, slug: everlywell, status: target}
+- {name: Sword Health, lane: healthcare, ats: greenhouse, slug: swordhealth, status: target}
+- {name: Nuna, lane: healthcare, ats: ashby, slug: nuna, status: target}
+- {name: Medallion, lane: healthcare, ats: ashby, slug: medallion, status: target}
+- {name: Prenuvo, lane: healthcare, ats: greenhouse, slug: prenuvo, status: target}
+- {name: Cortica, lane: healthcare, ats: greenhouse, slug: cortica, status: target}
+- {name: Galileo Health, lane: healthcare, ats: greenhouse, slug: galileo, status: target, nyc: true}
+
+# --- Mental health / caregiving / aging ------------------------------------
+- {name: Spring Health, lane: caregiving_aging_mental_health, ats: greenhouse, slug: springhealth66, status: target, nyc: true}
+- {name: Talkspace, lane: caregiving_aging_mental_health, ats: greenhouse, slug: talkspace, status: target, nyc: true}
+- {name: Two Chairs, lane: caregiving_aging_mental_health, ats: greenhouse, slug: twochairs, status: target}
+- {name: Rula Health, lane: caregiving_aging_mental_health, ats: ashby, slug: rula, status: target}
+- {name: Lyra Health, lane: caregiving_aging_mental_health, ats: lever, slug: lyrahealth, status: target}
+- {name: Modern Health, lane: caregiving_aging_mental_health, ats: greenhouse, slug: modernhealth, status: target}
+- {name: Charlie Health, lane: caregiving_aging_mental_health, ats: greenhouse, slug: charliehealth, status: target}
+- {name: Equip Health, lane: caregiving_aging_mental_health, ats: ashby, slug: equip, status: target}
+- {name: Daybreak Health, lane: caregiving_aging_mental_health, ats: greenhouse, slug: daybreakhealth, status: target}
+- {name: Ophelia, lane: caregiving_aging_mental_health, ats: greenhouse, slug: ophelia, status: target, nyc: true}
+- {name: Wellthy, lane: caregiving_aging_mental_health, ats: greenhouse, slug: wellthy, status: target, nyc: true}
+- {name: Papa, lane: caregiving_aging_mental_health, ats: greenhouse, slug: papa, status: target}
+- {name: Honor, lane: caregiving_aging_mental_health, ats: greenhouse, slug: honor, status: target}
+
+# --- Education --------------------------------------------------------------
+- {name: Khan Academy, lane: education, ats: greenhouse, slug: khanacademy, status: target}
+- {name: Coursera, lane: education, ats: greenhouse, slug: coursera, status: target}
+- {name: Outschool, lane: education, ats: ashby, slug: outschool, status: target}
+- {name: Brainly, lane: education, ats: ashby, slug: brainly, status: target}

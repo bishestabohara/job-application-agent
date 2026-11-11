@@ -1,0 +1,10 @@
+anthropic>=1.8
+pydantic>=2
+pyyaml
+requests
+typer
+rich
+python-dotenv
+# Gmail drafts (optional)
+google-api-python-client
+google-auth-oauthlib

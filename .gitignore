@@ -1,0 +1,10 @@
+.env
+secrets/
+.venv/
+data/jobagent.db
+out/
+__pycache__/
+*.pyc
+.DS_Store
+*.token
+*credentials*.json
